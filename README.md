@@ -1,29 +1,34 @@
 # AutoKeras-ArcFaceHead
-ArcFace head module for Autokeras - Automated Image feature extraction
+ArcFace head module for Autokeras - Network architecture search for Automated Image feature extraction
 
 Arcface based classification head block supporting huge number of classes in Autokeras for automated image feature extraction.
 
 ## Based on : 
 
 * keras implementation of Arcface layer
+```
 Source: https://github.com/4uiiurz1/keras-arcface
+```
 
 * An AutoML system based on Keras
-https://github.com/keras-team/autokeras
-Source: https://github.com/keras-team/autokeras/blob/master/autokeras/blocks/heads.py
+```
+Source: https://github.com/keras-team/autokeras
 Jin, H., Song, Q., and Hu, X. 2019. Auto-Keras: An Efficient Neural Architecture Search System. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (pp. 1946–1956).
-
+```
 
 ## Tested on :
 
-Products-10K : 9690 classes
+* Products-10K : 9690 classes
+```
 Source - https://products-10k.github.io/
 Bai, Y., Chen, Y., Yu, W., Wang, L. and Zhang, W., 2020. Products-10K: A Large-scale Product Recognition Dataset. arXiv preprint arXiv:2008.10545.
+```
 
-GroceryDataset : 81 classes
+* GroceryDataset : 81 classes
+```
 Source - https://github.com/marcusklasson/GroceryStoreDataset
 Klasson, M., Zhang, C., and Kjellström, H. 2019. A Hierarchical Grocery Store Image Dataset with Visual and Semantic Labels. In IEEE Winter Conference on Applications of Computer Vision (WACV).
-
+```
 
 
 ## Sample results on Grocery dataset :
@@ -75,4 +80,4 @@ sample_features = encoder_model.predict(x_samples)
 
 ```
 
-Note: uploading code in a day
+
