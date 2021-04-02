@@ -58,7 +58,7 @@ embedding_node = ak.ImageBlock()(input_node)
 embedding_node = ak.DenseBlock(name='embedding_common', use_batchnorm=True)(embedding_node)
 output_node = ArcFaceHead(name='arc_face', num_classes=num_classes)([embedding_node, input_node2])
 
-# Initialize the image classifier.
+# Initialize the Hyper-Model.
 clf = ak.AutoModel(
     inputs=[input_node, input_node2],
     outputs=[output_node],
