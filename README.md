@@ -54,8 +54,8 @@ num_classes = 100000        # set to exact number of distinct classes in target 
 
 input_node = ak.ImageInput()
 input_node2 = ak.Input()
-
-embedding_node = ak.DenseBlock(name='embedding_common', use_batchnorm=True)(input_node)
+embedding_node = ak.ImageBlock()(input_node)
+embedding_node = ak.DenseBlock(name='embedding_common', use_batchnorm=True)(embedding_node)
 output_node = ArcFaceHead(name='arc_face', dropout=0.5, num_classes=num_classes, face_weight_decay=1e-04)([embedding_node, input_node2])
 
 # Initialize the image classifier.
