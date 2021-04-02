@@ -56,7 +56,7 @@ input_node = ak.ImageInput()
 input_node2 = ak.Input()
 embedding_node = ak.ImageBlock()(input_node)
 embedding_node = ak.DenseBlock(name='embedding_common', use_batchnorm=True)(embedding_node)
-output_node = ArcFaceHead(name='arc_face', dropout=0.5, num_classes=num_classes, face_weight_decay=1e-04)([embedding_node, input_node2])
+output_node = ArcFaceHead(name='arc_face', num_classes=num_classes)([embedding_node, input_node2])
 
 # Initialize the image classifier.
 clf = ak.AutoModel(
@@ -64,6 +64,7 @@ clf = ak.AutoModel(
     outputs=[output_node],
 )
 
+# example callbacks
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir='automodel-log')
 es = EarlyStopping(monitor='val_arc_face_accuracy', mode='max', min_delta=1e-06, patience=8)
 
