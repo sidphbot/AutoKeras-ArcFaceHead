@@ -81,4 +81,4 @@ sample_features = encoder_model.predict(x_samples)
 
 ```
 
-PS. I am a poor student, If you find it useful consider giving me a shoutback, mention or like please :)
+PS. I am a student, If you find it useful consider giving me a shoutback, mention or like please :)
