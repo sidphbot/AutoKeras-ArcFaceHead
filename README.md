@@ -37,7 +37,7 @@ Klasson, M., Zhang, C., and Kjellström, H. 2019. A Hierarchical Grocery Store I
 Figure 1 : epoch_loss plot for all trials (Tensorboard)
 
 ![plot](./epoch_topk_categorical_accuracy.png)
-Figure 1 : epoch_top5_categorical_accuracy plot for all trials (Tensorboard)
+Figure 2 : epoch_top5_categorical_accuracy plot for all trials (Tensorboard)
 
 ![plot](./epoch_accuracy.png)
 Figure 3 : epoch_accuracy plot for all trials (Tensorboard)
