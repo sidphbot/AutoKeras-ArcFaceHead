@@ -80,5 +80,3 @@ encoder_model = keras.Model(inputs=model.input[0], outputs=model.get_layer("arcf
 sample_features = encoder_model.predict(x_samples)
 
 ```
-
-PS. I am a student, If you find it useful consider giving me a shoutback, mention or like please :)
